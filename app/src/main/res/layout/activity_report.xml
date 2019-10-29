@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#add8e6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.4"
+        android:text="健康报告"
+        android:textColor="#ffffff"
+        android:textSize="69sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="根据您的身体健康情况，我们向您提出一下建议："
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="根据您的身体健康情况，我们向您提出一下建议："
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:id="@+id/text_view1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="根据您的身体健康情况，我们向您提出一下建议："
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:id="@+id/text_view2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="根据您的身体健康情况，我们向您提出一下建议："
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:id="@+id/text_view3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="根据您的身体健康情况，我们向您提出一下建议："
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:id="@+id/text_view4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="根据您的身体健康情况，我们向您提出一下建议："
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:id="@+id/text_view5"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:text="点击返回测试报告"
+        android:textColor="#ffffff"
+        android:textSize="34sp"
+        android:background="#00000000"
+        android:layout_gravity="center"
+        android:id="@+id/button"/>
+
+
+</LinearLayout>
