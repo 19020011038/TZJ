@@ -102,6 +102,8 @@ public class jieguo extends AppCompatActivity {
                 xgetSG.setText("偏低");
             else
                 xgetSG.setText("标准");
+
+
             if(biaozhun*0.9<=i&&biaozhun*1.1>=i)
                 xgetTZ.setText("正常");
             else
@@ -146,19 +148,19 @@ public class jieguo extends AppCompatActivity {
                 xgetBMI.setText("超出范围");
 
 
-            if(0.08<b&&b<=0.15)
+            if(0.08<b/100&&b/100<=0.15)
             {
                 TZLdefen = 70;
                 xgetTZL.setText("过瘦");
             }
             else
-                if(0.15<b&&b<=0.25)
+                if(0.15<b/100&&b/100<=0.25)
                 {
                     TZLdefen = 100;
                     xgetTZL.setText("正常");
                 }
                 else
-                    if(0.25<b&&b<=0.35)
+                    if(0.25<b/100&&b<=0.35/100)
                     {
                         TZLdefen = 70;
                         xgetTZL.setText("超重");
@@ -260,19 +262,19 @@ public class jieguo extends AppCompatActivity {
 
 
 
-            if(0.1<b&&b<=0.2)
+            if(0.1<b/100&&b/100<=0.2)
             {
                 TZLdefen = 70;
                 xgetTZL.setText("过瘦");
             }
             else
-            if(0.2<b&&b<=0.3)
+            if(0.2<b/100&&b/100<=0.3)
             {
                 TZLdefen = 100;
                 xgetTZL.setText("正常");
             }
             else
-            if(0.3<b&&b<=0.45)
+            if(0.3<b/100&&b/100<=0.45)
             {
                 TZLdefen = 70;
                 xgetTZL.setText("超重");
@@ -381,18 +383,18 @@ public class jieguo extends AppCompatActivity {
         double bb = b;
         BigDecimal bbb = new BigDecimal(bb);
         double bbbb = bbb.setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
-        getTizhilv.setText(""+bbbb);
+        getTizhilv.setText(""+bbbb+"%");
 
 
-        double cc = c;
+        double cc = c*100;
         BigDecimal ccc = new BigDecimal(cc);
         double cccc = ccc.setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
-        getJRL.setText(""+cccc);
+        getJRL.setText(""+cccc+"%");
 
-        double dd = d;
+        double dd = d*100;
         BigDecimal ddd = new BigDecimal(dd);
         double dddd = ddd.setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
-        getTSFL.setText(""+dddd);
+        getTSFL.setText(""+dddd+"%");
 
 
         double ee = e;
@@ -409,17 +411,17 @@ public class jieguo extends AppCompatActivity {
         double SS = SUM;
         BigDecimal SSS = new BigDecimal(SS);
         double SSSS = SSS.setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
-        getSUM.setText(""+SSSS);
+        getSUM.setText(""+SSSS+"分");
 
         double hh = h;
         BigDecimal hhh = new BigDecimal(hh);
         double hhhh = hhh.setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
-        getSG.setText(""+hhhh);
+        getSG.setText(""+hhhh+"m");
 
         double ii = i;
         BigDecimal iii = new BigDecimal(ii);
         double iiii = iii.setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
-        getTZ.setText(""+iiii);
+        getTZ.setText(""+iiii+"kg");
 
 
         P1x = (TextView)findViewById(R.id.text_view013);

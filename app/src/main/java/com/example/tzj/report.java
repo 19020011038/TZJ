@@ -101,7 +101,7 @@ public class report extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(report.this,jieguo.class);
+                Intent intent = new Intent(report.this,data.class);
                 startActivity(intent);
                 finish();
             }

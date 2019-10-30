@@ -84,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="0.3"
-        android:text="点击返回测试报告"
+        android:text="点击重新测试"
         android:textColor="#ffffff"
         android:textSize="34sp"
         android:background="#00000000"
